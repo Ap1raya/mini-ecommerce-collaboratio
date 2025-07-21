@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     let allProducts = [];
 
+
+        //  add function to comma
+    function formatPrice(price) {
+        return Number(price).toLocaleString('th-TH');
+    }
+
     // Fetch products from JSON
     fetch('js/products.json')
         .then(response => response.json())
@@ -19,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
-                <p>ราคา: ${product.price} บาท</p>
+                <p>ราคา: ${formatPrice(product.price)} บาท</p> <!--เพิ่มการเเสดงราคาเเบบเข้าใจง่าย-->
             `;
             productList.appendChild(card);
         });
