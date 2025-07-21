@@ -1,13 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productList = document.getElementById('product-list');
     const searchInput = document.getElementById('searchInput');
+    const loader = document.getElementById('loader'); //add Loader element
+
     let allProducts = [];
 
 
-        //  add function to comma
+    //  add function to comma
     function formatPrice(price) {
         return Number(price).toLocaleString('th-TH');
     }
+
+
+    // แสดง loader
+    loader.style.display = 'block';
 
     // Fetch products from JSON
     fetch('js/products.json')
@@ -15,6 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             allProducts = data;
             displayProducts(allProducts);
+        })
+        .finally(() => {
+            // ซ่อน loader
+            loader.style.display = 'none';
         });
 
     function displayProducts(products) {
