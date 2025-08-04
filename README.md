@@ -8,3 +8,7 @@
 ## ขั้นตอนการทำงาน
 
 - https://docs.google.com/document/d/1YWwtKE79FP8cCpq2XwGXd0t1ysdwastP/edit?usp=sharing&ouid=108934125705371786741&rtpof=true&sd=true
+
+## Team Report
+
+- https://docs.google.com/document/d/1tPC4gQH8rIBfWhGdLAfrcDwKvnDkvPIPCzgcPPrFuCc/edit?usp=sharing
