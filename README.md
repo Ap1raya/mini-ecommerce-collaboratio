@@ -1,5 +1,3 @@
-## Working Website
-- https://ap1raya.github.io/mini-ecommerce-collaboratio/
 
 ## Wedsite Live Demo
 
